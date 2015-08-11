@@ -97,7 +97,9 @@ import GHC.Handle               ( hSetBinaryMode )
 import System.CPUTime           (getCPUTime)
 import Numeric                  (showFFloat)
 
-#define SIZEOF_HSINT SIZEOF_VOID_P
+-- Dirty hack to get this to compile in ghcjs today.
+-- #define SIZEOF_HSINT SIZEOF_VOID_P
+#define SIZEOF_HSINT 4
 
 type BinArray = IOUArray Int Word8
 
