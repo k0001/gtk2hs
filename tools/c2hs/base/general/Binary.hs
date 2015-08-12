@@ -99,7 +99,7 @@ import Numeric                  (showFFloat)
 
 -- Dirty hack to get this to compile in ghcjs today.
 -- #define SIZEOF_HSINT SIZEOF_VOID_P
-#define SIZEOF_HSINT 4
+#define SIZEOF_HSINT 8
 
 type BinArray = IOUArray Int Word8
 
